@@ -1,0 +1,31 @@
+Algorithm
+
+ minN = 5,   // the minmum Allowed number of people
+ musuerd = 0;
+ minD = 1.5 m,    // the minmum Allwed distance between the poeple
+array loca; // here we will store the locations of the address
+
+
+while(1) {
+
+array s = Serarching if there any bluetooth address can the sensor read, if there store the addresses in this array
+if (s.leangth > 5) {
+for(i= 0; i < s.leangth; i++){
+(x,y) = findLocation(s(i));    // here this method must give us the lociton of the address as x and y
+loca(i) = root(x^2 + y^2);  
+}
+
+for(i= 0; i < s.leangth; i++)
+for(j= 0; j < s.leangth; j++){
+if( minD > abs[s(i) - s(j)] )
+musured ++
+
+if ( musured > minN ){
+Disp(" Warning there is a gathering for more than 5 people in the Location of: %d", s(i) ); 
+break;   //here the internal loop will stop but the external loop will go to the next location
+} 
+} 
+   // when the external loop is finish we done musured the distance between all address, then will go back and searching again in while loop 
+}  // the end of if 
+
+} the end of While loop
